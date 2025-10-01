@@ -1,0 +1,66 @@
+# 🛒 Projeto Lógico de Banco de Dados – E-commerce
+
+## 📌 Descrição
+
+Este projeto representa a modelagem lógica de um sistema de e-commerce, com foco em clientes pessoa física (PF) e pessoa jurídica (PJ), múltiplas formas de pagamento, entregas com rastreio e controle de pedidos e produtos. A modelagem foi refinada com base em diretrizes do módulo de modelagem conceitual, incluindo relacionamentos do modelo EER e aplicação de constraints.
+
+## 🧠 Modelagem Lógica
+
+- Cliente PF/PJ com validação exclusiva (CPF ou CNPJ)
+- Pedido vinculado ao cliente
+- Múltiplas formas de pagamento por pedido
+- Entrega com status e código de rastreio
+- Produtos e itens de pedido com quantidade e preço unitário
+
+## 🗂️ Estrutura do Banco
+
+Tabelas principais:
+- `Cliente`
+- `Pedido`
+- `Forma_Pagamento`
+- `Pagamento_Pedido`
+- `Entrega`
+- `Produto`
+- `Item_Pedido`
+
+## 🛠️ Script SQL
+
+Inclui:
+- Criação das tabelas com chave primária e estrangeira
+- Constraints para garantir integridade dos dados
+- Tipos ENUM e CHECK para validação de tipo de cliente
+
+## 📊 Consultas SQL
+
+Consultas implementadas:
+- Recuperações simples com `SELECT`
+- Filtros com `WHERE`
+- Atributos derivados com expressões
+- Ordenações com `ORDER BY`
+- Filtros por grupo com `HAVING`
+- Junções entre tabelas com `JOIN`
+
+Exemplos de perguntas respondidas:
+- Quais clientes fizeram mais de 3 pedidos?
+- Qual o valor total dos pedidos por cliente?
+- Quais entregas estão em trânsito?
+- Qual o desconto aplicado sobre o preço dos produtos?
+
+## 🚀 Como executar
+
+1. Clone o repositório
+2. Execute o script SQL em seu SGBD (MySQL, PostgreSQL, etc.)
+3. Insira dados de teste
+4. Execute as queries para validação
+
+## 📁 Repositório
+
+Este projeto está disponível para avaliação no GitHub.  
+Inclui:
+- Script de criação (`schema.sql`)
+- Script de inserção (`data.sql`)
+- Arquivo `README.md` com descrição completa
+
+## 👨‍💻 Autor
+
+Desenvolvido por Lucas como parte do desafio de projeto lógico de banco de dados.
